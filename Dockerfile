@@ -1,4 +1,4 @@
-FROM alpine:3.4
-RUN apk add --update bash && rm -rf /var/cache/apk/*
+FROM alpine:3.5
+RUN apk add --no-cache bash
 COPY ping /
 CMD ["/ping"]
