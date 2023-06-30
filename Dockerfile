@@ -1,4 +1,4 @@
-FROM alpine:3.5
+FROM alpine:3.18.2
 COPY ping /
 
 HEALTHCHECK --interval=5s --timeout=3s \
